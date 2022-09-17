@@ -1,0 +1,93 @@
+.transport-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.transport-list__label {
+  display: block;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.transport-list__label--aero {
+  background-image: url("../img/svg/icon_plane.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+
+.transport-list__label--bus {
+  background-image: url("../img/svg/icon_bus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.transport-list__label--walk {
+  background-image: url("../img/svg/icon_run.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.transport-list__label--cycle {
+  background-image: url("../img/svg/icon_bicycle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.transport-list__input--aero:checked + .transport-list__label {
+  background-image: url("../img/svg/icon_plane_checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+
+.transport-list__input--bus:checked + .transport-list__label {
+  background-image: url("../img/svg/icon_bus_checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+
+.transport-list__input--walk:checked + .transport-list__label {
+  background-image: url("../img/svg/icon_run_checked.svg");
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: 75%;
+}
+
+.transport-list__input--cycle:checked + .transport-list__label {
+  background-image: url("../img/svg/icon_bicycle_checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 68%;
+}
+
+@media (min-width: @tablet-width) {
+  .transport-list__label {
+    width: 44px;
+    height: 44px;
+  }
+
+  .transport-list {
+    width: 121px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .transport-list__label {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      background-color: #e2e5f1;
+      opacity: 0.5;
+    }
+  }
+}

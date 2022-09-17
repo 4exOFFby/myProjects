@@ -1,0 +1,148 @@
+.directions-card__content {
+  background: #ffffff;
+  border-radius: 10px;
+  position: relative;
+  padding: 25px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+  margin-top: -10px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 21px min-content;
+}
+
+.directions-card__content--long {
+  padding-bottom: 7px;
+}
+
+.directions-card__title {
+  font-family: "Blogger Sans", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  margin: 0;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.directions-card__text {
+  font-family: "Blogger Sans", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  opacity: 0.3;
+  margin: 0;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.directions-card__counter {
+  font-family: "Blogger Sans", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(22, 28, 53, 0.3);
+  padding-left: 32px;
+  background-image: url("../img/svg/icon_user.svg");
+  background-repeat: no-repeat;
+  background-position: 21% center;
+  opacity: 1;
+}
+
+.directions-card__image {
+  display: block;
+  border-radius: 10px 10px 0 0;
+  width: 270px;
+  height: 110px;
+}
+
+.directions-card__image-tablet {
+  border-radius: 10px 10px 0 0;
+}
+
+.directions-card__flag {
+  position: absolute;
+  left: 24px;
+  top: -14px;
+}
+
+@media (min-width: @tablet-width) {
+  .directions-card__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 5px;
+  }
+
+  .directions-card__text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  .directions-card__counter {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    background-size: 22px;
+    background-position: 0 center;
+    padding-left: 30px;
+  }
+
+  .directions-card__flag {
+    top: 18px;
+    right: -198px;
+    left: auto;
+    width: 70px;
+    height: 47px;
+  }
+
+  .directions-card__content {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    width: 270px;
+    margin-right: -211px;
+    border-radius: 15px 0 0 15px;
+    min-height: 140px;
+    padding: 29px 20px 20px 30px;
+  }
+
+  .directions-card__image {
+    order: 2;
+    object-fit: cover;
+  }
+
+  .directions-card__image-tablet {
+    border-radius: 0 20px 20px 0;
+    height: 140px;
+    width: 559px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .directions-card__text {
+    margin-bottom: 26px;
+  }
+
+  .directions-card__image-tablet {
+    border-radius: 20px 20px 20px 20px;
+  }
+
+  .directions-card__flag {
+    top: 23px;
+    right: -138px;
+  }
+
+  .directions-card__content {
+    margin-right: -269px;
+    padding: 22px 20px 20px 30px;
+  }
+}

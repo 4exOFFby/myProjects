@@ -1,0 +1,36 @@
+.catalog-form {
+  position: relative;
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1320px;
+    margin: 0 auto;
+  }
+
+  .catalog-form__travelers-search {
+    order: 1;
+    width: 285px;
+  }
+
+  .catalog-form__search-results {
+    order: 0;
+    width: 74%;
+  }
+
+  .catalog-form__catalog-pagination {
+    order: 1;
+  }
+}
+
+.catalog-form__countries-filter--close + .catalog-form__travelers-search {
+  margin-top: 30px;
+}
+
+.catalog-form__countries-filter--close ~ .catalog-form__search-results {
+  margin-top: 30px;
+}

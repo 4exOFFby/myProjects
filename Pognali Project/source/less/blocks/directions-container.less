@@ -1,0 +1,28 @@
+.directions-container {
+  padding-top: 67px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .directions-container {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 68px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .directions-container {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 160px;
+    padding-bottom: 87px;
+    display: grid;
+    grid-template-columns: 560px 1fr;
+    grid-template-rows: 108px 1fr 1fr;
+    column-gap: 242px;
+  }
+}

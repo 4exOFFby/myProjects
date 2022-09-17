@@ -1,0 +1,141 @@
+.catalog-pagination {
+  background-color: #edeff6;
+}
+
+.catalog-pagination__wrapper {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  width: 275px;
+  margin-right: 0;
+}
+
+.catalog-pagination__button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.catalog-pagination__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Blogger Sans", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #1d2e5b;
+}
+
+.catalog-pagination__item + .catalog-pagination__item {
+  margin-left: 0;
+}
+
+.catalog-pagination__link--active {
+  background-color: #ffd74b;
+}
+
+.catalog-pagination__item {
+  width: 50px;
+  height: 50px;
+}
+
+.catalog-pagination__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: none;
+}
+
+.catalog-pagination__img--next {
+  transform: rotate(180deg);
+}
+
+.catalog-pagination__img--previos,
+.catalog-pagination__img--next {
+  width: 20px;
+  height: 13px;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-pagination {
+    width: 688px;
+    margin: 0 auto;
+    margin-bottom: 96px;
+  }
+
+  .catalog-pagination__list {
+    display: flex;
+  }
+
+  .catalog-pagination__wrapper {
+    padding: 25px 17px 25px 27px;
+    justify-content: space-between;
+    width: 644px;
+  }
+
+  .catalog-pagination__button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 90px;
+  }
+
+  .catalog-pagination__img {
+    width: 15px;
+    height: 18px;
+  }
+
+  .catalog-pagination__img--next {
+    transform: rotate(180deg);
+  }
+
+  .catalog-pagination__img--previos {
+    transform: rotate(0deg);
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .catalog-pagination {
+    margin: 0;
+  }
+
+  .catalog-pagination__container {
+    width: 949px;
+    margin: 0;
+    margin-bottom: 112px;
+    margin-right: auto;
+  }
+
+  .catalog-pagination__wrapper {
+    padding: 25px 26px 25px 27px;
+    width: 898px;
+  }
+
+  .catalog-pagination__link {
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .catalog-pagination__link--active:hover {
+    opacity: 1;
+    cursor: auto;
+  }
+}

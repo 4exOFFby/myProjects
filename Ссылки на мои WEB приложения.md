@@ -1,19 +1,11 @@
-Адаптивный под mobile, tablet, desktop WEB сервис поиска попутчиков (минимальный Js)
+Итоговый проект практики в "Лига А"
 
-https://4exoffby.github.io/1923439-pognali-25/build
+https://4exoffby.github.io/fitness/build 
 
 Дипломный проект курса JavaScript 
 
 https://4exoffby.github.io/1923439-kekstagram-26/
 
-Desktop WEB приложение интернет магазина (минимальный Js)
+Сложный в плане вёрстки, адаптивный под mobile, tablet, desktop WEB сервис поиска попутчиков (минимальный Js)
 
-https://4exoffby.github.io/1923439-device-33/
-
-Desktop WEB приложение доставки мороженого (минимальный Js)
-
-https://4exoffby.github.io/1923439-gllacy-33/
-
-Desktop WEB приложение туристического городка Седона (минимальный Js)
-
-https://4exoffby.github.io/1923439-sedona-33/
+https://4exoffby.github.io/1923439-pognali-25/build

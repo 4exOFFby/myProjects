@@ -1,0 +1,152 @@
+.btn {
+  display: inline-flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+
+  color: $color-default-white;
+
+  background-color: $color-neon-blue;
+  border: none;
+  cursor: pointer;
+
+  transition: opacity $trans-default;
+
+  &--red {
+    background-color: $color-torch-red;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
+}
+
+.btn--main-screen {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+  border: 4px solid #ffffff;
+  width: 230px;
+  min-height: 57px;
+
+  @media (max-width: 1199px) {
+    width: 183px;
+  }
+}
+
+.btn--tub {
+  background-color: transparent;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: rgba(16, 38, 84, 0.5);
+  padding: 20px 0 15px 0;
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+
+.btn--tub-active {
+  position: relative;
+  color: #102654;
+  // border-bottom: 2px solid #d10a42;
+  cursor: auto;
+}
+
+.btn--tub-active::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #d10a42;
+}
+
+.btn--by-subscriber {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #102654;
+  background-color: transparent;
+  border: 2px solid #102654;
+  width: 206px;
+  min-height: 64px;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+.btn--promo {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+  width: 343px;
+  min-height: 67px;
+  border: 4px solid #ffffff;
+
+  @media (max-width: 1199px) {
+    width: 202px;
+    min-height: 39px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+.btn--stocks {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: transparent;
+  padding: 0;
+  color: #1c3374;
+  border-bottom: 1px solid #1c3374;
+
+  @media (max-width: 767px) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+.btn--stocks-cpecial {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}

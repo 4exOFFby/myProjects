@@ -1,0 +1,124 @@
+.free-lesson-form {
+  input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #74819c;
+    padding: 10px 10px 10px 0;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    width: 46.5%;
+  }
+
+  input::placeholder {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+  }
+
+  button {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: transparent;
+    border: 3px solid #ffffff;
+    width: 100%;
+    min-height: 52px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.free-lesson-form__wrapper {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 1200px) {
+  .free-lesson-form {
+    input {
+      padding-bottom: 7px;
+      width: 45.5%;
+    }
+
+    button {
+      transform: translateX(-7px);
+      width: 100%;
+      max-width: 410px;
+      min-height: 52px;
+    }
+
+    .free-lesson-form__wrapper {
+      margin-top: 13px;
+      margin-bottom: 31px;
+      transform: translateX(-7px);
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .free-lesson-form {
+    input {
+      padding-bottom: 5px;
+      width: 43.5%;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .free-lesson-form {
+    input {
+      width: 46.5%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .free-lesson-form {
+    input {
+      width: 100%;
+      padding: 10px 10px 6px 0;
+    }
+
+    input:not(:last-child) {
+      margin-right: 0;
+    }
+
+    input:not(:first-of-type) {
+      margin-top: 27px;
+    }
+
+    button {
+      margin-top: 39px;
+      min-height: 53px;
+    }
+  }
+
+  .free-lesson-form__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+}

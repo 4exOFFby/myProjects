@@ -1,0 +1,82 @@
+.free-lesson {
+  padding: 56px 0;
+  background-color: #102654;
+
+  .free-lesson__container {
+    padding: 0 170px 0 103px;
+  }
+
+  h2 {
+    font-family: "Alumni Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 54px;
+    line-height: 84px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .free-lesson {
+    grid-column: 1/2;
+    padding-bottom: 62px;
+
+    h2 {
+      transform: translateX(-7px);
+      line-height: 81px;
+    }
+
+    .free-lesson__container {
+      max-width: 84%;
+      width: 580px;
+      margin: 0;
+      margin-left: auto;
+      padding: 0 165px 0 0;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .free-lesson {
+    padding: 62px 0 70px;
+
+    h2 {
+      margin-bottom: 28px;
+    }
+
+    .free-lesson__container {
+      padding: 0 162px 0 132px;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .free-lesson {
+    padding: 70px 0;
+
+    h2 {
+      font-size: 42px;
+      line-height: 50px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .free-lesson {
+    padding: 64px 0 70px 0;
+
+    h2 {
+      font-size: 32px;
+      line-height: 38px;
+      letter-spacing: 0.03em;
+      font-weight: 600;
+      margin-bottom: 29px;
+    }
+
+    .free-lesson__container {
+      padding: 0 15px 0 15px;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.logo {
+  width: 122px;
+  height: 44px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo--footer {
+  width: 88px;
+  height: 32px;
+}
+
+@media (max-width: 1199px) {
+  .logo {
+    width: 82px;
+    height: 17px;
+  }
+}
+
+@media (max-width: 767px) {
+  .logo {
+    width: 69px;
+    height: 24px;
+  }
+
+  .logo--footer {
+    margin-top: 0;
+    width: 68px;
+    height: 15px;
+  }
+}

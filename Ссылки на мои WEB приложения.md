@@ -10,6 +10,6 @@ https://4exoffby.github.io/1923439-kekstagram-26/
 
 https://4exoffby.github.io/1923439-pognali-25/build
 
-- Маленький пет-проект на React
+- Маленький, но забавный пет-проект на React 
 
 https://4exoffby.github.io/hurt/build/

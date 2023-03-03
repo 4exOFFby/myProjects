@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.js": "./static/js/main.18f580ab.js",
+    "static/media/clock.png": "./static/media/clock.a7927cabe7767ca6de57.png",
+    "static/media/Lobster-Regular.woff2": "./static/media/Lobster-Regular.72dbe4394d2b0c364dec.woff2",
+    "static/media/Neucha-Regular.woff2": "./static/media/Neucha-Regular.eba1c8aac843e10613a0.woff2",
+    "static/media/main-image.png": "./static/media/main-image.371014b0615274e52d7f.png",
+    "index.html": "./index.html",
+    "main.18f580ab.js.map": "./static/js/main.18f580ab.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.18f580ab.js"
+  ]
+}
